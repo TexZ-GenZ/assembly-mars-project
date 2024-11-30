@@ -1,0 +1,113 @@
+MATH-MATCH GAME - USER MANUAL
+===========================
+
+1. System Requirements
+--------------------
+   - MARS MIPS Simulator (version 4.5 or later)
+   - Java Runtime Environment (JRE)
+   - Minimum screen resolution: 800x600
+   - Sound capability (optional, for sound effects)
+
+2. Installation
+-------------
+   a) Required Files
+      - main.asm (Main program and menu system)
+      - game.asm (Game logic and mechanics)
+      - board.asm (Board generation and display)
+
+   b) Setup Steps
+      1. Install Java Runtime Environment (JRE)
+         - Download from java.com
+         - Follow installation instructions
+      2. Download MARS MIPS Simulator
+      3. Place all .asm files in the same directory
+      4. Open MARS simulator
+      5. Open main.asm as the primary file
+
+3. Starting the Game
+------------------
+   a) In MARS:
+      1. Click "Assemble" (F3) or use Tools -> Assemble
+      2. Click "Run" (F5) or use Run -> Go
+      3. The game menu will appear in the MARS Run I/O window
+
+   b) Menu Options:
+      1. Start Game
+      2. How to Play
+      3. Exit
+
+4. Gameplay Instructions
+---------------------
+   a) Game Board Layout
+      +-------+-------+-------+-------+
+      |   1   |   2   |   3   |   4   |
+      +-------+-------+-------+-------+
+      |   5   |   6   |   7   |   8   |
+      +-------+-------+-------+-------+
+      |   9   |  10   |  11   |  12   |
+      +-------+-------+-------+-------+
+      |  13   |  14   |  15   |  16   |
+      +-------+-------+-------+-------+
+
+   b) Card Types
+      - Multiplication equations (e.g., "2x3")
+      - Answers (e.g., "6")
+      - Hidden cards (shown as "*")
+
+   c) Making Moves
+      1. Enter a number (1-16) to select first card
+      2. Card will be revealed
+      3. Enter another number for second card
+      4. If cards match, they stay revealed
+      5. If cards don't match, they're hidden again
+
+5. Game Rules
+-----------
+   a) Matching Rules
+      - Match multiplication equations with their answers
+      - Example: "2x3" matches with "6"
+      - All numbers range from 2 to 5
+
+   b) Scoring
+      - Game tracks number of moves
+      - Fewer moves = better performance
+      - All pairs must be matched to win
+
+6. Special Features
+----------------
+   a) Sound Effects (requires sound capability)
+      - Match found: High pitch success tone
+      - No match: Low pitch error tone
+      - Game won: Victory melody
+
+   b) Error Handling
+      - Invalid input prompts error message
+      - Already revealed cards can't be selected
+      - Clear instructions for each error
+
+7. Troubleshooting
+----------------
+   a) Common Issues
+      - "Java not found": Install or update JRE
+      - "File not found": Ensure all .asm files are in same directory
+      - "Assembly error": Check MARS version compatibility
+      - "No sound": Verify system audio settings
+      - "Display issues": Check minimum resolution (800x600)
+
+   b) Error Messages
+      - "Invalid input": Enter only numbers 1-16
+      - "Card already revealed": Choose a hidden card
+      - "File not assembled": Click assemble before running
+      - "Java error": Verify JRE installation
+
+8. Tips for Success
+----------------
+   - Remember card positions
+   - Look for patterns in equation placement
+   - Use process of elimination
+   - Start with corner cards
+   - Track revealed numbers
+
+
+
+This manual provides comprehensive instructions for installing, running, and playing the Math-Match Game..

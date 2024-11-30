@@ -1,0 +1,17 @@
+# MARS output files
+*.class
+*.jar
+
+# Temporary files
+*.tmp
+
+# Word temporary files
+~$*.docx
+
+# Windows specific
+Thumbs.db
+desktop.ini
+
+# IDE specific files
+.vscode/
+.idea/

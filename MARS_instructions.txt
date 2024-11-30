@@ -1,0 +1,54 @@
+Running Assembly Code in MARS Simulator
+=====================================
+
+Prerequisites:
+-------------
+1. Download MARS MIPS simulator
+   * Visit https://dpetersanderson.github.io/
+   * Download the latest version of MARS (mars.jar)
+   * Make sure you have Java installed on your system
+
+Steps to Run Assembly Code:
+--------------------------
+1. Launch MARS
+   * Double click on the mars.jar file
+   * Or run from command line: java -jar mars.jar
+
+2. Open Your Assembly File
+   * Click File > Open
+   * Navigate to your .asm file
+   * Select and open the file
+
+3. Assemble the Program
+   * Click the "Assemble" button (wrench icon) or press F3
+   * Check bottom panel for any syntax errors
+
+4. Run the Program
+   * Click "Run" button (green play icon) or press F5 for full run
+   * Use "Step" button (next arrow icon) or press F7 for step-by-step
+
+5. View Results
+   * Check "Run I/O" tab for program output
+   * View registers in "Registers" panel
+   * Check memory in "Data Segment" panel
+
+Helpful Tips:
+------------
+- Save files with .asm extension
+- Use built-in text editor
+- Enable "Settings > Show Labels Window"
+- Use "Settings > Exception Handler" for syscalls
+
+Common MIPS Syscalls:
+-------------------
+Print Integer: $v0 = 1
+Print String: $v0 = 4
+Read Integer: $v0 = 5
+Exit Program: $v0 = 10
+
+Debugging:
+---------
+- Set breakpoints by clicking line numbers
+- Watch register values in real-time
+- Use "Step" for instruction-by-instruction execution
+- Check "Messages" window for runtime errors
